@@ -1,238 +1,164 @@
-# JavaScript Obyektləri Tapşırıqları
+# JavaScript Obyektlər Tapşırıqlar
 
 ## Tapşırıq 1
 
-Bir `user` adlı obyekt yaradın.
+Bir `istifadeci` adlı obyekt yaradın
 
 Aşağıdakı key və value-lar olsun:
 
-- name
-- age
-- city
+- ad
+- yas
+- seher
 
-Daha sonra:
-- bütün obyekti `console.log()` ilə çap edin
-- `name` dəyərini ayrıca çap edin
+Obyekti `console.log()` ilə göstərin
 
+`ad` dəyərini ayrıca göstərin (dot notation)
 
-```js
-// Kodunuzu buraya yazın
-```
-
----
 
 ## Tapşırıq 2
 
-Bir `car` adlı obyekt yaradın.
+Bir `masin` adlı obyekt yaradın
 
 Aşağıdakı məlumatlar olsun:
 
-- brand
+- marka
 - model
-- year
+- il
 
 Dot notation istifadə edərək:
-- `brand` dəyərini çap edin
-- `year` dəyərini dəyişdirin
+- `marka` dəyərini göstərin
+- `il` dəyərini dəyişdirin və göstərin
 
-Sonda obyekti çap edin.
-
-
-```js
-// Kodunuzu buraya yazın
-```
-
----
 
 ## Tapşırıq 3
 
-`new Object()` istifadə edərək bir obyekt yaradın.
+`new Object()` istifadə edərək bir obyekt yaradın
 
-Obyektin adı `student` olsun.
+Obyektin adı `telebe` olsun
 
 Aşağıdakı məlumatları əlavə edin:
 
-- name
-- surname
-- score
+- ad
+- soyad
+- bal
 
-Sonda obyekti çap edin.
-
-
-```js
-// Kodunuzu buraya yazın
-```
-
----
+Obyekt yaradılandan sonra `console.log` ilə göstərin
 
 ## Tapşırıq 4
 
-Bir `phone` adlı obyekt yaradın.
+Bir `telefon` adlı obyekt yaradın
 
 Aşağıdakı məlumatlar olsun:
 
-- brand
-- price
-- color
+- marka
+- qiymet
+- reng
 
 Sonra:
-- `color` key-ni silin
-- obyekti çap edin
+- `reng` keyi silin
+- obyekti göstərin
 
-`delete` keyword istifadə edin.
+`delete` keyword istifadə edərək hər hansı obyekti silin
 
-
-```js
-// Kodunuzu buraya yazın
-```
-
----
 
 ## Tapşırıq 5
 
-Bir `person` adlı obyekt yaradın.
+Bir `sexs` adlı obyekt yaradın
 
 Obyektin içində aşağıdakı function olsun:
 
-- `sayHello`
+- `salamVer`
 
-Function işlədikdə ekrana:
-
-```js
-Salam
-```
+Function çalışdığı zaman konsolda "Salam JS" yazılsın
 
 yazsın.
-
-
-```js
-// Kodunuzu buraya yazın
-```
 
 ---
 
 ## Tapşırıq 6
 
-Bir `book` adlı obyekt yaradın.
+Bir `kitab` adlı obyekt yaradın.
 
 Aşağıdakı məlumatlar olsun:
 
-- title
-- author
-- pages
+- ad
+- muellif
+- sehifeSayi
+- sehifeyeGet(sehife) - funksiya və parameter
 
 Sonra:
-- yeni bir `price` key əlavə edin
-- `pages` dəyərini dəyişdirin
-
-Sonda obyekti çap edin.
-
-
-```js
-// Kodunuzu buraya yazın
-```
-
----
+- yeni bir `qiymet` key əlavə edin
+- `sehifeSayi` dəyərini dəyişdirin
+- sehifeyeGet(sehife) çalışdığında həmin səhifəni konsolda göstərsin
 
 ## Tapşırıq 7
 
-Bir `products` adlı array yaradın.
+Bir `mehsullar` adlı array yaradın
 
-Array-in içində 3 obyekt olsun.
+Array-in içində 3 obyekt olsun
 
-Hər obyektin içində:
-- name
-- price
-
-olsun.
+Hər obyektin içində bunlar olacaq:
+- ad
+- qiymet
 
 Məsələn:
 
 ```js
 [
   {
-    name: "Telefon",
-    price: 1200
+    ad: "Telefon",
+    qiymet: 1200
   }
 ]
 ```
+Sonra:
+- bütün array-i göstərin
+- Array-da 2-ci indexdə olan obyekti göstərin
 
-Sonda bütün array-i çap edin.
-
-
-```js
-// Kodunuzu buraya yazın
-```
-
----
 
 ## Tapşırıq 8
 
-Bir `users` adlı array yaradın.
+Bir `istifadeciler` adlı array yaradın.
 
 Array-in içində 2 obyekt olsun.
 
-Hər obyektin içində:
-- username
+Hər obyektin içində bunlar olacaq:
+- istifadəçiAdi
 - email
-- age
+- yas
 
-olsun.
+Sonra:
+- birinci istifadəçinin istifadəçiAdi-ni göstərin (0-cı index)
+- ikinci istifadəçinin email-ni göstərin (1-ci index)
 
-Daha sonra:
-- birinci istifadəçinin username-ni çap edin
-- ikinci istifadəçinin email-ni çap edin
-
-
-```js
-// Kodunuzu buraya yazın
-```
-
----
 
 ## Tapşırıq 9
 
-Bir `computer` adlı obyekt yaradın.
+Bir `komputer` adlı obyekt yaradın
 
 Aşağıdakı məlumatlar olsun:
 
-- brand
+- marka
 - ram
-- storage
+- yaddaş
 
 Sonra:
 - `ram` dəyərini dəyişdirin
-- yeni `color` key əlavə edin
-- `storage` key-ni silin
+- yeni `reng` key əlavə edin
+- `yaddaş` key-ni silin
 
-Sonda obyekti çap edin.
-
-
-```js
-// Kodunuzu buraya yazın
-```
-
----
+Obyekti konsolda göstərin
 
 ## Tapşırıq 10
 
-Bir `employee` adlı obyekt yaradın.
+Bir `isci` adlı obyekt yaradın
 
 Aşağıdakı məlumatlar olsun:
 
-- name
-- position
-- salary
+- ad
+- vezife
+- maas
 
-Obyektin içində `showInfo` adlı function yaradın.
+Obyektin içində `melumatGoster` adlı function yaradın.
 
-Function işlədikdə belə yazsın:
-
-```js
-İşçi məlumatları göstərildi
-```
-
-
-```js
-// Kodunuzu buraya yazın
-```
+Function çalışdığı zaman obyekdəki bütün məlumatlar konsolda görsənsin 
