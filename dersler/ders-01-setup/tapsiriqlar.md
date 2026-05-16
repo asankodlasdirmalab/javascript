@@ -25,7 +25,7 @@ Faylın içində:
 
 ## Tapşırıq 3
 
-Konsolda aşağıdakı məlumatları ayrıca göstərin:
+Konsolda aşağıdakı məlumatları göstərin:
 
 - Öz adınız
 - Yaşınız
