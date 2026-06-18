@@ -1,52 +1,69 @@
-# Dərs 1 — Tapşırıqlar
 
-## Tapşırıq 1
+### Tapşırıq 1 
 
-Yeni bir `index.html` faylı yaradın.
+HTML səhifəsi yaradın və JavaScript vasitəsilə konsola `"Salam JavaScript"` yazın
 
-Aşağıdakıları edin:
+### Tapşırıq 2 — document.write()
 
-- `html`, `head` və `body` taglarını yazın
-- Səhifəyə başlıq əlavə edin
-- `script.js` faylını `<script>` tagı ilə qoşun
+`document.write()` istifadə edərək səhifədə öz adınızı göstərin.
 
----
+### Tapşırıq 3 — alert()
 
-## Tapşırıq 2
+Səhifə açıldıqda `"Sayta xoş gəlmisiniz"` mesajını alert pəncərəsində göstərin.
 
-`script.js` faylı yaradın.
+### Tapşırıq 4 — Bir neçə console.log()
 
-Faylın içində:
+`console.log()` istifadə edərək adınızı, yaşınızı və sevdiyiniz rəngi ayrı-ayrı sətirlərdə konsola çıxarın.
 
-- `console.log()` istifadə edin
-- Konsolda `"Salam JavaScript"` yazısını göstərin
+### Tapşırıq 5 — Sadə kalkulyator
 
----
+`console.log()` istifadə edərək aşağıdakı əməliyyatların nəticəsini çıxarın:
 
-## Tapşırıq 3
+* 10 + 5
+* 20 - 7
+* 4 * 6
+* 30 / 5
 
-Konsolda aşağıdakı məlumatları göstərin:
+### Tapşırıq 6 — Məktəb məlumatları
 
-- Öz adınız
-- Yaşınız
-- Sevdiyiniz rəng
+`document.write()` istifadə edərək aşağıdakı məlumatları səhifədə göstərin:
 
-Nümunə:
+* Məktəbin adı
+* Sinif
+* Fənn
 
-```js
-console.log("Ali")
-console.log(22)
-console.log("Qara")
-```
----
+Hər məlumat yeni sətirdə göstərilməlidir.
 
-## Tapşırıq 4
+### Tapşırıq 7 — Oyun açılış ekranı
 
-Konsolda 5 fərqli rəqəm göstərin
+Bir oyun üçün səhifə yaradın:
 
----
+* `alert()` ilə "Oyuna xoş gəlmisiniz" mesajı göstərin.
+* `document.write()` ilə oyunun adını yazın.
+* `console.log()` ilə "Oyun başladıldı" mesajını çıxarın.
 
-## Tapşırıq 5
+### Tapşırıq 8 — Onlayn mağaza
 
-Konsolda 5 fərqli mətn (string) göstərin.
+Aşağıdakı məlumatları `document.write()` ilə səhifədə göstərin:
 
+* Məhsul: Klaviatura
+* Qiymət: 50 AZN
+
+Sonra `console.log()` ilə `"Məhsul səhifəsi açıldı"` mesajını çıxarın.
+
+### Tapşırıq 9 — Şagird məlumatı
+
+Bir HTML səhifəsində:
+
+* `alert()` ilə "Şagird sistemi açıldı" mesajını göstərin.
+* `document.write()` ilə şagirdin adını və balını göstərin.
+* `console.log()` ilə "Məlumat uğurla yükləndi" mesajını çıxarın.
+
+### Tapşırıq 10 — Bütün mövzular birlikdə
+
+Bir HTML faylı yaradın və aşağıdakıları edin:
+
+1. JavaScript kodunu `<script>` teqi daxilində yazın.
+2. `alert()` ilə istifadəçini salamlayın.
+3. `document.write()` ilə özünüz haqqında 3 məlumat göstərin.
+4. `console.log()` ilə `"Tapşırıq tamamlandı"` mesajını çıxarın.
