@@ -1,1 +1,0 @@
-// burda kodunu yaz

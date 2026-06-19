@@ -1,61 +1,113 @@
-# JavaScript Dərs 3 - Riyazi, Təyinetmə, String Operatorlar tapşırıqları
+### Tapşırıq 1 — Riyazi əməliyyatlar
 
-## Tapşırıq 1
+iki ədəd yaradın və aşağıdakı əməliyyatların nəticələrini hesablayın:
 
-İki ədəd yaradın və aşağıdakıları tətbiq edin:
+* toplama (`+`)
+* çıxma (`-`)
+* vurma (`*`)
+* bölmə (`/`)
 
-- Toplama (+)
-- Chixma (-)
-- Vurma (*)
-- Bolme (/)
-- Qaliq (%) - modul
-- Quvvet (**)
+Nəticələri `document.write()` ilə göstərin.
 
-## Tapşırıq 2
+---
 
-Bir ədəd yaradın və aşağıdakıları tətbiq edin
+### Tapşırıq 2 — Qalığın tapılması
 
-- Increment - Artma
-- Decrement - Azalma
+iki ədəd yaradın və `%` operatoru ilə bölmədən qalan qalığı tapın.
 
-## Tapşırıq 3
+Nəticəni `console.log()` ilə göstərin.
 
-Bir ədəd yaradın və aşağıdakılardan istifadə edərək dəyəri dəyişdirin
+---
 
-- += 
-- -= 
-- *=
-- /=
+### Tapşırıq 3 — Qüvvətə yüksəltmə
 
+bir ədəd yaradın və onu `**` operatoru ilə kvadrata yüksəldin.
 
-## Tapşırıq 4
+Nəticəni `console.log()` ilə göstərin.
 
-İki ədəd yaradın və onları birbirinə böləndə alınan qalığı tapın
+---
 
-## Tapşırıq 5
+### Tapşırıq 5 — Dəyəri artırmaq və azaltmaq
 
-Bir ədəd yaradın və aşağıdakıları tətbiq edin
+Bir dəyişən yaradın
 
-- += 20
-- -= 10
-- *= 3
-- /= 6
-- %= 7
+* `++` istifadə edərək 1 artırın
+* `--` istifadə edərək 1 azaldın
 
+Hər addımdan sonra nəticəni konsolda göstərin.
 
-## Tapşırıq 6
+---
 
-Ad, soyad ve şəhər yaradın və bir mətndə birləşdirin
+### Tapşırıq 6 — += operatoru
 
-## Tapşırıq 7
+Bir dəyişən yaradın və ona `50` dəyəri verin.
 
-Tapşırıq 6-dakı prosesi Tick və $-dan (template literal) istifadə edərək edin
+Sonra `+=` operatoru ilə üzərinə `20` əlavə edin və nəticəni göstərin.
 
-## Tapşırıq 8
+---
 
-Üç məhsul qiyməti və adı yaradın
+### Tapşırıq 7
 
-1. İlkin məhsulları göstərin
-2. Qiymətlərə 100 manat artım tətbiq edin və yeni qiymətləri göstərin
-3. Hər bir məhsulu random sayda kiməsə satın. Satılan qiyməti və məhsulu göstərin
-4. Satış edilən zaman məhsullara 10% endirim tətbiq edin
+Bir dəyişən yaradın və aşağıdakı operatorları tətbiq edin:
+
+* `-=`
+* `*=`
+* `/=`
+* `%=`
+
+Hər əməliyyatdan sonra nəticəni `console.log()` ilə göstərin.
+
+---
+
+### Tapşırıq 8 — Ad və soyad birləşdirmə
+
+`prompt()` ilə istifadəçidən:
+
+* ad
+* soyad
+
+alın.
+
+`+` operatoru ilə birləşdirib `document.write()` ilə göstərin.
+
+---
+
+### Tapşırıq 9 — Tick ilə mətn birləşdirmə
+
+ad dəyişəni yaradın
+
+Aşağıdakı formata uyğun mesaj yaradın:
+
+```javascript
+`Salam ${ad}`
+```
+
+Nəticəni `alert()` ilə göstərin.
+
+---
+
+### Tapşırıq 10 — İstifadəçi kartı
+
+iki dəyişən yaradın:
+
+* ad
+* yaş
+
+Məlumatları tick istifadə edərək aşağıdakı formada göstərin:
+
+```javascript
+`Mənim adım ${name}, yaşım isə ${age}-dir.`
+```
+
+Nəticəni həm `document.write()`, həm də `console.log()` ilə çıxarın.
+
+---
+
+### Tapşırıq 11 — Maaş hesablayıcısı
+
+İstifadəçidən prompt ilə aylıq maaşı götürün.
+
+Maaşı:
+
+* 10% artırın (`+=`)
+* sonra 5% azaldın (`-=`)
