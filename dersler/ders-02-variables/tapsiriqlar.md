@@ -1,68 +1,124 @@
-# Dərs 2: Variables və Primitive Data Types - Tapşırıqlar
 
-## Tapşırıq 1
-`let` istifadə edərək `ad` adlı bir variable yaradın və ona öz adınızı yaradın.
-Nəticəni konsolda göstərin 
+### Tapşırıq 1 — dəyişənlər
 
-## Tapşırıq 2
-`const` istifadə edərək `dogumIli` adlı bir variable yaradın və ona doğum ilinizi yaradın.
-Nəticəni konsolda göstərin 
+`let` və `const` istifadə edərək aşağıdakı dəyişənləri yaradın və `console.log()` ilə göstərin:
 
-## Tapşırıq 3
-`let` ilə yaradılmış bir variable reassign edin. Məsələn, əvvəl `let seher = "Baki"` yazın, sonra `sheher = "Gence"` yazaraq dəyişdirin və hər iki dəfə nəticəni konsolda göstərin 
+* ad
+* yaş
+* ölkə
 
-## Tapşırıq 4
-`const` ilə yaradılmış bir variable reassign edin çalışın və konsolda erroru analiz edin
+### Tapşırıq 2 — let dəyişənini yenilə
 
-## Tapşırıq 5
-Üç fərqli dırnaql string yaradın: `" "`, `' '` və `` ` ` ``. Hər birini ayrı variable kimi yazın və console-da göstərin
+`let` ilə `age` dəyişəni yaradın və ona əvvəlcə `20`, sonra `25` dəyəri verin.
 
-## Tapşırıq 6
-`` ` ` `` (backtick) istifadə edərək bir variable-ın dəyərini string dəyəri yaradın. 
-Məsələn:
-```javascript
-let mesaj = `Salam, mənim adım`;
-```
+Hər iki nəticəni konsolda göstərin.
 
-## Tapşırıq 7
-Bir tam ədəd (int) və bir kəsr ədəd (float) yaradın və hər ikisini console-da göstərin. Məsələn: `42` və `3.14`.
+### Tapşırıq 3 — const dəyişənini dəyişməyə çalışın
 
-## Tapşırıq 8
-İki ədədi toplayın, çıxın, vurun və bölün. Nəticələri console-da göstərin.
-Toplama: +
-Çıxma: -
-Vurma: *
-Bölmə: /
+`const` ilə `country` dəyişəni yaradın.
 
+Sonra ona başqa dəyər verməyə çalışın və konsolda yaranan xətaya baxın.
 
-## Tapşırıq 9
-`true` və `false` dəyərlərinə malik iki boolean variable yaradın. 
-Məsələn: `let telebesenmi = true` və `let mezunsan = false`.
+### Tapşırıq 4 — String 
 
-## Tapşırıq 10
-Bir variable yaradın, amma heç bir dəyər verməyin daha sonra `typeof` istifadə edərək onun tipini yoxlayaraq konsolda göstərin
+Mətnlər yaradın:
 
-## Tapşırıq 11
-`null` dəyərinə malik bir variable yaradın və `typeof` ilə yoxlayın. Nəticəni console-da göstərin
+* qoşa dırnaq ilə (`" "`)
+* tək dırnaq ilə (`' '`)
+* backtick ilə ()
 
-## Tapşırıq 12
-Aşağıdakı variable-ların hər birinin tipini `typeof` istifadə edərək yoxlayın:
-```javascript
-let a = "Salam";
-let b = 100;
-let c = true;
-let d;
-let e = null;
-```
+Hamısını `console.log()` ilə göstərin.
 
-## Tapşırıq 13
-`alert()` funksiyasından istifadə edərək brauzerdə bir xəbərdarlıq mesajı göstərin. Məsələn: `alert("Salam JavaScript")`.
+### Tapşırıq 5 — String və Number
 
-## Tapşırıq 14
-Kodunuza şərhlər əlavə edin. `//` istifadə edərək
+Aşağıdakı dəyişənləri yaradın:
 
-## Tapşırıq 15
-Aşağıdakı variable-ları yaradın və console-a göstərin
-- Adınız (string)
-- Yaşınız (number)
-- Tələbəsinizmi? (boolean)
+* ad (`string`)
+* yaş (`number`)
+* boy (`float`)
+
+Sonra bütün dəyişənləri konsolda göstərin
+
+### Tapşırıq 6 — Boolean dəyərlər
+
+Aşağıdakı dəyişənləri yaradın:
+
+* isStudent → true
+* isAdmin → false
+
+Dəyərlərini və tiplərini konsolda göstərin.
+
+### Tapşırıq 7 — undefined və null
+
+Bir dəyişən yaradın, amma ona dəyər verməyin.
+
+Başqa bir dəyişən yaradın və ona `null` verin.
+
+Sonra:
+
+* Dəyərlərini çıxarın
+* `typeof` ilə tiplərini yoxlayın
+
+### Tapşırıq 8 — typeof
+
+Aşağıdakı dəyişənlər yaradın:
+
+* string
+* number
+* float
+* boolean
+* undefined
+* null
+
+Hər biri üçün `typeof` nəticəsini konsolda göstərin.
+
+### Tapşırıq 9 — İstifadəçi adı
+
+`prompt()` istifadə edərək istifadəçidən məlumat alın.
+
+Sonra:
+
+* `document.write()`
+
+ilə ekrana göstərin.
+
+### Tapşırıq 10 
+
+`prompt()` istifadə edərək:
+
+* Ad
+* Yaş
+
+məlumatlarını alın.
+
+Sonra:
+
+* `document.write()` ilə göstərin
+* Hər dəyişənin tipini `typeof` ilə yoxlayın
+
+### Tapşırıq 11 — Oyun
+
+Aşağıdakı dəyişənləri yaradın:
+
+* oyunçu adı (`string`)
+* level (`number`)
+* premium istifadəçidir (`boolean`)
+* email (`null`)
+* telefon (`undefined`)
+
+Sonra bütün məlumatları və tiplərini konsolda göstərin.
+
+### Tapşırıq 12 — Qeydiyyat sistemi
+
+Kiçik qeydiyyat sistemi hazırlayın:
+
+* Adı `prompt()` ilə alın
+* Yaşı `prompt()` ilə alın
+* `isStudent` adlı boolean dəyişəni yaradın
+* `email` dəyişəninə `null` verin
+* `phoneNumber` dəyişəni yaradın, amma dəyər verməyin
+* Məlumatları `document.write()` ilə göstərin (p html elementindən istifadə edərək)
+* Məlumatları `console.log()` ilə göstərin
+* Bütün dəyişənlərin tipini `typeof` ilə yoxlayın
+* Bir `const` dəyişəni yaradın və onu dəyişdirməyə çalışın
+* Kod daxilində həm `//`, həm də `/* */` şərhlərindən istifadə edin
