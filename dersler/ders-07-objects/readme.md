@@ -1,10 +1,9 @@
-# [JavaScript Dərs 7 Objects](https://docs.google.com/presentation/d/10VVzWOV9WEVj5d1XqCNvh7XVfxnQ44-K4zQrETdycBc/edit?slide=id.g3ef22582a23_0_1#slide=id.g3ef22582a23_0_1)
+# [JavaScript Dərs 8 Loops ](https://docs.google.com/presentation/d/14xnWdu5sK72SdkjoHKVim_dRiIGawUrWdq9H4Mti7EY/edit?slide=id.p#slide=id.p)
 
 Mövzular
 
-* Object yaradılması: `{} və new Object()`
-* Key və value nədir
-* Object-dən dəyər götürmə: Dot notation
-* Bracket notation: `obj['name']`
-* Object-in içində funksiya yaratmaq: `function` ilə və function istifadə etmədən
-* Object destructuring
+* for
+* for..of
+* while
+* break, continue
+* nested loop
