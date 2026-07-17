@@ -1,43 +1,6 @@
-
-# Dərs 9: JavaScript Array Metodları — 40 Praktik Tapşırıq
-
-### Tapşırıq 1
-
-`mehsullar` arrayin sonuna "Qulaqlıq" elementini əlavə edin.
-
-```javascript
-const mehsullar = ["Telefon", "Laptop"];
-```
-
-### Tapşırıq 2
-
-`reqemler` arrayin sonuncu elementini silin və silinən elementi ekrana çıxarın.
-
-```
-const reqemler = [10, 20, 30];
-```
-
-### Tapşırıq 3
-
-`seherler` arrayin əvvəlinə "Bakı" elementini əlavə edin.
-
-```
-const seherler = ["Gəncə", "Sumqayıt"];
-```
-
-### Tapşırıq 4
-
-`telebeler` arrayin birinci elementini silin və qalan arrayi göstərin.
-
-
-```
-const telebeler = ["Anar", "Leyla", "Murad"];
-```
-
-### Tapşırıq 5
+# Tapşırıq 5
 
 `renkler` arrayin 1-ci indeksindəki elementi silib yerinə "Sarı" yazın.
-
 
 ```
 const renkler = ["Qırmızı", "Yaşıl", "Mavi"];
@@ -240,7 +203,6 @@ const str = "1234";
 
 `Array.of` metodundan istifadə edərək ötürülən tək-tək parametrlərdən yeni bir array qurun.
 
-
 ### Tapşırıq 31
 
 arraydəki yazılardan ibarət elementlərin hamısını böyük hərflərə (uppercase) çevrilmiş yeni array halına gətirin (`map`).
@@ -296,7 +258,6 @@ arraydəki bütün ədədlərin müsbət olub-olmadığını yoxlayın.
 ```
 const test = [5, 8, -1, 12];
 ```
-
 
 ### Tapşırıq 39
 
