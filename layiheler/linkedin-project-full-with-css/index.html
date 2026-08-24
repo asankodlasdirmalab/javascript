@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn</title>
+  <style>
+    /* BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    }
+
+    body {
+      background-color: #f3f2ef;
+      color: rgba(0, 0, 0, 0.9);
+      padding-bottom: 50px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #ffffff;
+      height: 53px;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      color: #0a66c2;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .nav-search {
+      background-color: #edf3f8;
+      border-radius: 4px;
+      padding: 6px 12px;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 850px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    /* PROFILE CARD */
+    .cover-photo {
+      height: 120px;
+      background: linear-gradient(90deg, #0a66c2, #004182);
+    }
+
+    .profile-header {
+      padding: 0 24px 24px 24px;
+      position: relative;
+    }
+
+    .avatar-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #0a66c2;
+      color: white;
+      font-size: 2.5rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 4px solid #ffffff;
+      margin-top: -50px;
+      margin-bottom: 12px;
+    }
+
+    .profile-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .profile-headline {
+      font-size: 0.95rem;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    .profile-location {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 8px;
+    }
+
+    .badge-status {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 6px 12px;
+      border-radius: 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .status-open { background-color: #e8f3ee; color: #057642; }
+    .status-busy { background-color: #fce8e6; color: #c00; }
+
+    /* SECTION CARDS */
+    .card-body {
+      padding: 24px;
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #181818;
+    }
+
+    /* ANALYTICS METRICS */
+    .analytics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .metric-box {
+      background-color: #f8f9fa;
+      padding: 12px;
+      border-radius: 6px;
+    }
+
+    .metric-number {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #0a66c2;
+    }
+
+    .metric-label {
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    /* EXPERIENCE & SKILLS */
+    .item-row {
+      border-bottom: 1px solid #f0f0f0;
+      padding: 12px 0;
+    }
+
+    .item-row:last-child {
+      border-bottom: none;
+    }
+
+    .item-title {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .item-subtitle {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .skill-pill {
+      display: inline-block;
+      background-color: #edf3f8;
+      color: #0a66c2;
+      padding: 6px 12px;
+      border-radius: 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">LinkedApp</div>
+    <div class="nav-search">Login</div>
+   
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="cover-photo"></div>
+      <div class="profile-header">
+        <script>
+          // Module 1, Lesson 7: Object
+          const profile = {
+            firstName: "Günel",
+            lastName: "Nuriyeva",
+            headline: "Frontend Developer",
+            location: "Naxçıvan, Azərbaycan",
+            isOpenToWork: true,
+            getInitials: function() {
+              return this.firstName[0] + this.lastName[0];
+            }
+          };
+
+          // Module 1, Lesson 4: Ternary Operator
+          let statusBadge = profile.isOpenToWork 
+            ? `<span class="badge-status status-open">#OpenToWork</span>` 
+            : `<span class="badge-status status-busy">Currently Employed</span>`;
+
+          document.write(`
+            <div class="avatar-circle">${profile.getInitials()}</div>
+            <div class="profile-name">${profile.firstName} ${profile.lastName}</div>
+            <div class="profile-headline">${profile.headline}</div>
+            <div class="profile-location">${profile.location}</div>
+            ${statusBadge}
+          `);
+        </script>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h2 class="section-title">Statistika</h2>
+        <script>
+          // Module 1, Lesson 6: Arrays
+          let profileViewsPerMonth = [120, 150, 200, 310]; // Past 4 months
+          
+          // Module 1, Lesson 8: Loops
+          let totalViews = 0;
+          for (let i = 0; i < profileViewsPerMonth.length; i++) {
+            totalViews += profileViewsPerMonth[i];
+          }
+
+          // Module 1, Lesson 5: Arrow Function
+          const calculateAverage = (total, count) => (total / count).toFixed(0);
+
+          let avgViews = calculateAverage(totalViews, profileViewsPerMonth.length);
+
+          document.write(`
+            <div class="analytics-grid">
+              <div class="metric-box">
+                <div class="metric-number">${totalViews}</div>
+                <div class="metric-label">Takibçiler</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-number">${avgViews}</div>
+                <div class="metric-label">Orta izləmə / aylıq</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-number">48</div>
+                <div class="metric-label">Axtarış</div>
+              </div>
+            </div>
+          `);
+        </script>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h2 class="section-title">Təcrübə</h2>
+        <script>
+          // Module 1, Lesson 7: Array of Objects
+          const experiences = [
+            { title: "Senior JavaScript Instructor", company: "Tech Academy", years: 2, current: true },
+            { title: "Frontend Developer", company: "Web Innovations MMC", years: 3, current: false },
+            { title: "Junior Web Developer", company: "StartHub", years: 1, current: false }
+          ];
+
+          // Module 1, Lesson 8: for...of loop
+          for (let exp of experiences) {
+            // Module 1, Lesson 4: Conditions
+            let durationText = exp.current ? `${exp.years} yrs · Present` : `${exp.years} yrs`;
+
+            document.write(`
+              <div class="item-row">
+                <div class="item-title">${exp.title}</div>
+                <div class="item-subtitle">${exp.company} · ${durationText}</div>
+              </div>
+            `);
+          }
+        </script>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h2 class="section-title">Qabiliyyətlər</h2>
+        <script>
+          // Module 2, Lesson 9: Array Methods (filter, forEach)
+          const skillsList = [
+            { name: "JavaScript (ES6+)", category: "tech" },
+            { name: "HTML5 & CSS3", category: "tech" },
+            { name: "Git & GitHub", category: "tools" },
+            { name: "VS Code", category: "tools" },
+            { name: "Teaching & Mentorship", category: "soft" }
+          ];
+
+          // Module 2, Lesson 9: filter() method
+          let techSkills = skillsList.filter(skill => skill.category === "tech");
+
+          document.write(`<div>`);
+          
+          // Module 2, Lesson 9: forEach() method
+          skillsList.forEach(skill => {
+            document.write(`<span class="skill-pill">${skill.name}</span>`);
+          });
+
+          document.write(`</div>`);
+        </script>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
