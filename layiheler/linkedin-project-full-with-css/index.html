@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,8 +116,15 @@
       font-weight: 600;
     }
 
-    .status-open { background-color: #e8f3ee; color: #057642; }
-    .status-busy { background-color: #fce8e6; color: #c00; }
+    .status-open {
+      background-color: #e8f3ee;
+      color: #057642;
+    }
+
+    .status-busy {
+      background-color: #fce8e6;
+      color: #c00;
+    }
 
     /* SECTION CARDS */
     .card-body {
@@ -185,13 +193,15 @@
       margin: 4px;
     }
   </style>
+  <script src="script.js"></script>
 </head>
+
 <body>
 
   <div class="navbar">
     <div class="logo">LinkedApp</div>
     <div class="nav-search">Login</div>
-   
+
   </div>
 
   <div class="container">
@@ -207,14 +217,14 @@
             headline: "Frontend Developer",
             location: "Naxçıvan, Azərbaycan",
             isOpenToWork: true,
-            getInitials: function() {
+            getInitials: function () {
               return this.firstName[0] + this.lastName[0];
             }
           };
 
           // Module 1, Lesson 4: Ternary Operator
-          let statusBadge = profile.isOpenToWork 
-            ? `<span class="badge-status status-open">#OpenToWork</span>` 
+          let statusBadge = profile.isOpenToWork
+            ? `<span class="badge-status status-open">#OpenToWork</span>`
             : `<span class="badge-status status-busy">Currently Employed</span>`;
 
           document.write(`
@@ -231,38 +241,26 @@
     <div class="card">
       <div class="card-body">
         <h2 class="section-title">Statistika</h2>
-        <script>
-          // Module 1, Lesson 6: Arrays
-          let profileViewsPerMonth = [120, 150, 200, 310]; // Past 4 months
-          
-          // Module 1, Lesson 8: Loops
-          let totalViews = 0;
-          for (let i = 0; i < profileViewsPerMonth.length; i++) {
-            totalViews += profileViewsPerMonth[i];
-          }
-
-          // Module 1, Lesson 5: Arrow Function
-          const calculateAverage = (total, count) => (total / count).toFixed(0);
-
-          let avgViews = calculateAverage(totalViews, profileViewsPerMonth.length);
-
-          document.write(`
-            <div class="analytics-grid">
-              <div class="metric-box">
-                <div class="metric-number">${totalViews}</div>
-                <div class="metric-label">Takibçiler</div>
-              </div>
-              <div class="metric-box">
-                <div class="metric-number">${avgViews}</div>
-                <div class="metric-label">Orta izləmə / aylıq</div>
-              </div>
-              <div class="metric-box">
-                <div class="metric-number">48</div>
-                <div class="metric-label">Axtarış</div>
-              </div>
+        <div class="analytics-grid">
+          <script>
+            document.write(`
+             <div class="metric-box">
+               <div class="metric-number">${stats.takibciler}</div>
+               <div class="metric-label">Takibçiler</div>
             </div>
-          `);
-        </script>
+            <div class="metric-box">
+              <div class="metric-number">${stats.ortaIzleme}</div>
+              <div class="metric-label">Orta izləmə / aylıq</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-number">${stats.axtaris}</div>
+              <div class="metric-label">Axtarış</div>
+            </div>
+            `)
+          </script>
+         
+          
+        </div>
       </div>
     </div>
 
@@ -270,25 +268,14 @@
       <div class="card-body">
         <h2 class="section-title">Təcrübə</h2>
         <script>
-          // Module 1, Lesson 7: Array of Objects
-          const experiences = [
-            { title: "Senior JavaScript Instructor", company: "Tech Academy", years: 2, current: true },
-            { title: "Frontend Developer", company: "Web Innovations MMC", years: 3, current: false },
-            { title: "Junior Web Developer", company: "StartHub", years: 1, current: false }
-          ];
-
-          // Module 1, Lesson 8: for...of loop
-          for (let exp of experiences) {
-            // Module 1, Lesson 4: Conditions
-            let durationText = exp.current ? `${exp.years} yrs · Present` : `${exp.years} yrs`;
-
+          tecrube.map(i => {
             document.write(`
-              <div class="item-row">
-                <div class="item-title">${exp.title}</div>
-                <div class="item-subtitle">${exp.company} · ${durationText}</div>
-              </div>
-            `);
-          }
+             <div class="item-row">
+              <div class="item-title">${i.vezife}</div>
+              <div class="item-subtitle">${i.sirket} · ${i.muddet} · ${i.status}</div>
+            </div>
+            `)
+          })
         </script>
       </div>
     </div>
@@ -296,32 +283,19 @@
     <div class="card">
       <div class="card-body">
         <h2 class="section-title">Qabiliyyətlər</h2>
-        <script>
-          // Module 2, Lesson 9: Array Methods (filter, forEach)
-          const skillsList = [
-            { name: "JavaScript (ES6+)", category: "tech" },
-            { name: "HTML5 & CSS3", category: "tech" },
-            { name: "Git & GitHub", category: "tools" },
-            { name: "VS Code", category: "tools" },
-            { name: "Teaching & Mentorship", category: "soft" }
-          ];
-
-          // Module 2, Lesson 9: filter() method
-          let techSkills = skillsList.filter(skill => skill.category === "tech");
-
-          document.write(`<div>`);
-          
-          // Module 2, Lesson 9: forEach() method
-          skillsList.forEach(skill => {
-            document.write(`<span class="skill-pill">${skill.name}</span>`);
-          });
-
-          document.write(`</div>`);
-        </script>
+        <div>
+          <script>
+            skills.map(i => {
+              document.write(`<span class="skill-pill">${i}</span>`)
+            })
+          </script>
+        
+        </div>
       </div>
     </div>
 
   </div>
 
 </body>
+
 </html>
