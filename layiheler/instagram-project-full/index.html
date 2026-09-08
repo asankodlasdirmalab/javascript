@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini İnstagram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Mini Instagram</h1>
+        <button id="yeni-paylasim-btn" class="add-btn">+</button>
+    </header>
+
+    <main>
+        <div id="feed-qutusu" class="feed">
+            <!-- JS ilə paylaşımlar bura əlavə ediləcək -->
+        </div>
+    </main>
+
+    <!-- 1. YENİ PAYLAŞIM YARATMAQ ÜÇÜN MODAL -->
+    <div id="paylasim-modali" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-paylasim">&times;</span>
+            <h2>Yeni Paylaşım</h2>
+            <input type="text" id="sekil-url" placeholder="Şəklin URL ünvanı">
+            <textarea id="sekil-tesviri" placeholder="Şəkil üçün açıqlama yazın..."></textarea>
+            <button id="paylas-btn">Paylaş</button>
+        </div>
+    </div>
+
+    <!-- 2. POSTA BAXMAQ ÜÇÜN MODAL (İNSTAGRAM POST VIEW) -->
+    <div id="post-baxis-modali" class="modal">
+        <div class="modal-content post-view-content">
+            <span class="close-btn" id="close-post-baxis">&times;</span>
+            <img id="baxis-sekil" src="" alt="Post">
+            
+            <div class="post-actions">
+                <button class="action-btn like-btn">❤️ <span id="baxis-like">0</span></button>
+                <button class="action-btn dislike-btn">👎 <span id="baxis-dislike">0</span></button>
+            </div>
+            
+            <div class="post-info">
+                <p id="baxis-metn"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP BİLDİRİŞ -->
+    <div id="bildiris-qutusu" class="toast">
+        Mesaj bura gələcək
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
