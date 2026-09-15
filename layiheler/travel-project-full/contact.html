@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Əlaqə | Wanderlust</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Əlaqə Formu üçün əlavə sadə stillər */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #e1e5eb;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            outline: none;
+            transition: border 0.3s ease;
+        }
+        .form-control:focus {
+            border-color: var(--primary-color);
+        }
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .info-item {
+            margin-bottom: 30px;
+        }
+        .info-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Naviqasiya (Menyu) -->
+    <nav class="navbar">
+        <div class="logo">Wanderlust.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Əsas Səhifə</a></li>
+            <li><a href="about.html">Haqqımızda</a></li>
+            <li><a href="contact.html" class="active">Əlaqə</a></li>
+        </ul>
+    </nav>
+
+    <!-- Əlaqə Bölməsi -->
+    <section style="padding: 150px 50px 80px; text-align: center;">
+        <div class="section-title">
+            <h2>Bizimlə Əlaqə Saxlayın</h2>
+            <p>Suallarınız var? Sizə kömək etməkdən məmnun olarıq.</p>
+        </div>
+        
+        <div class="contact-container">
+            <!-- Əlaqə Forması -->
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ad və Soyadınız" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-poçt ünvanınız" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Mövzu">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="Mesajınızı buraya yazın..." required style="resize: vertical;"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Mesajı Göndər</button>
+                </form>
+            </div>
+
+            <!-- Əlaqə Məlumatları -->
+            <div class="contact-info">
+                <div class="info-item">
+                    <h4>📍 Baş Ofisimiz</h4>
+                    <p>Nizami küçəsi, Port Baku<br>Bakı, Azərbaycan</p>
+                </div>
+                <div class="info-item">
+                    <h4>📞 Zəng Edin</h4>
+                    <p>+994 12 345 67 89<br>+994 50 123 45 67</p>
+                </div>
+                <div class="info-item">
+                    <h4>✉️ E-poçt</h4>
+                    <p>salam@wanderlust.az<br>destek@wanderlust.az</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Wanderlust Travel Co. Bütün hüquqlar qorunur.</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

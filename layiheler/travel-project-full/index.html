@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Swiper.js CSS (Third-party library for Carousel) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Popup Banner -->
+    <div id="promo-popup" class="popup-overlay hidden">
+        <div class="popup-content">
+            <span id="close-popup" class="close-btn">&times;</span>
+            <h2>Xüsusi təklif! 🌍</h2>
+            <p>İndi bron et 20% a kimi endirim al.</p>
+            <input type="email" placeholder="Email daxil et" class="popup-input">
+            <button class="btn">Təsdiq et</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Səyahət et.</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Ana səhifə</a></li>
+            <li><a href="about.html">Haqqımızda</a></li>
+            <li><a href="contact.html">Əlaqə</a></li>
+        </ul>
+    </nav>
+
+    <!-- Auto Carousel Hero Section -->
+    <header class="hero">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80');">
+                    <div class="slide-content">
+                        <h1>Dünyanı kəşf et</h1>
+                        <p>Çimərlikləri və sahilləri kəşf et.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80');">
+                    <div class="slide-content">
+                        <h1>Dağ səyahəti</h1>
+                        <p>Şəxsi bələdçilərlə zirvələrə çıx.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1920&q=80');">
+                    <div class="slide-content">
+                        <h1>Şəhərlər</h1>
+                        <p>Şəhərlərdə fərqli mədəniyyətləri kəşf et.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination & Navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </header>
+
+    <!-- Load More Section -->
+    <section class="destinations-section">
+        <div class="section-title">
+            <h2>Ən çox ziyarət edilən yerlər</h2>
+            <p>Öz macəranı tap</p>
+        </div>
+        
+        <div class="grid-container" id="card-container">
+            <!-- Visible Cards -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=600&q=80" alt="Paris">
+                <div class="card-info">
+                    <h3>Paris, France</h3>
+                    <p>Romantikanın şəhəri.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=600&q=80" alt="Venice">
+                <div class="card-info">
+                    <h3>Venice, Italy</h3>
+                    <p>Arzuların şəhəri.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=600&q=80" alt="Tokyo">
+                <div class="card-info">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Gələcəyin şəhəri.</p>
+                </div>
+            </div>
+
+            <!-- Hidden Cards (Loaded on click) -->
+            <div class="card hidden-card">
+                <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=600&q=80" alt="Dubai">
+                <div class="card-info">
+                    <h3>Dubai, UAE</h3>
+                    <p>Səhra şəhəri.</p>
+                </div>
+            </div>
+            <div class="card hidden-card">
+                <img src="https://images.unsplash.com/photo-1516815231560-8f41ec531527?auto=format&fit=crop&w=600&q=80" alt="Maldives">
+                <div class="card-info">
+                    <h3>Maldives</h3>
+                    <p>Tropik məkan</p>
+                </div>
+            </div>
+            <div class="card hidden-card">
+                <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=600&q=80" alt="Sydney">
+                <div class="card-info">
+                    <h3>Sydney, Australia</h3>
+                    <p>Gözəl sakit şəhər.</p>
+                </div>
+            </div>
+        </div>
+
+        <button id="load-more-btn" class="btn outline-btn">Daha çoxun göstər</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Səyahət </p>
+    </footer>
+
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
